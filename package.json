@@ -1,0 +1,41 @@
+{
+  "name": "stud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/js/app.js",
+  "sideEffects": false,
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "config": {
+    "src": {
+      "sass": "src/sass"
+    },
+    "build": {
+      "css": "build/css"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^8.6.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "require-dir": "^1.0.0",
+    "run-sequence": "^2.2.1",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "vinyl-source-stream": "^2.0.0",
+    "webpack": "^4.15.1",
+    "webpack-stream": "^4.0.3"
+  }
+}

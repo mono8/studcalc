@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Template</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" media="all" href="css/main.css">
+</head>
+
+<body>
+  <!-- BEGIN content -->
+  <div class="container">
+    <div class="diameter-row">
+      <label class="diameter-row__label" for="diameter">Диаметр (мм) &nbsp; &nbsp; d = &nbsp;</label>
+      <input class="diameter-row__input" id="diameter" minlength="1" type="number" autofocus placeholder="мм" min="1">
+    </div>
+    <div class="height-row">
+      <label class="height-row__label" for="height">Размер между присоединительными плоскостями (мм) &nbsp; &nbsp; H = &nbsp;</label>
+      <input class="height-row__input" id="height" minlength="1" type="number" min="1" placeholder="мм">
+    </div>
+    <button class="button" id="button">Вычислить</button>
+    <table class="table">
+      <tbody>
+        <tr class="table__row">
+          <td class="table__first-col">Величина фаски резьбы шпильки &nbsp; c<sub>j</sub> = &nbsp;</sub></td>
+          <td class="table__second-col" id='c'></td>
+        </tr>
+        <tr class="table__row">
+          <td class="table__first-col">Шаг резьбы &nbsp; p<sub>j</sub> = </sub>&nbsp;</td>
+          <td class="table__second-col" id='p'></td>
+        </tr>
+        <tr class="table__row">
+          <td class="table__first-col">Высота гайки &nbsp; b<sub>j</sub> = </sub>&nbsp;</td>
+          <td class="table__second-col" id='b'></td>
+        </tr>
+        <tr class="table__row">
+          <td class="table__first-col">Расстояние от фаски до поверхности гайки &nbsp; a = 1.5&#x22C5;p<sub>j</sub> = </sub>&nbsp;</td>
+          <td class="table__second-col" id="a"></td>
+        </tr>
+        <tr class="table__row">
+          <td class="table__first-col">Длина шпильки &nbsp; L = H + 2(c<sub>j</sub> + a + b<sub>j</sub>) = </sub>&nbsp;</td>
+          <td class="table__second-col" id='l'></td>
+        </tr>
+      </tbody>
+    </table>
+    <img src="img/stud.JPG" class="stud-img" width="443" height="435" alt="график">
+  </div>
+  <!-- END content -->
+
+  <!-- BEGIN scripts -->
+  <script type="text/javascript" src="js/app.js"></script>
+  <!-- END scripts -->
+
+</body>
+
+</html>

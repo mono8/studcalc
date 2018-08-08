@@ -1,0 +1,62 @@
+body
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px
+.diameter-row, .height-row
+  width: 800px
+  margin-top: 30px
+  &__label
+    width: 500px
+    display: inline-block
+    text-align: right
+  &__input
+    width: 60px
+.height-row
+  margin-bottom: 30px
+.container
+  width: 1000px
+  margin: 0 auto
+  position: relative
+.table
+  margin-top: 30px
+  border-collapse: collapse
+  margin-bottom: 50px
+  &__first-col
+    width: 450px
+    text-align: right
+    padding-top: 5px
+    padding-bottom: 5px
+.stud-img
+  margin-left: 50%
+  transform: translateX(-50%)
+.button
+  display: inline-block
+  margin-left: 50%
+  text-align: center
+  text-transform: uppercase
+  font-weight: bold
+  padding: 15px 25px
+  transform: translateX(-50%)
+  background-color: #0277bd
+  border: 2px solid #0277bd
+  color: white
+  font-size: 14px
+  font-family: 'Roboto', sans-serif
+.error
+  animation: onerror 1s ease-in-out
+@keyframes onerror
+  0%
+    transform: translateX(-15px)
+    border-color: red
+  20%
+    transform: translateX(15px)
+  40%
+    transform: translateX(-10px)
+  60%
+    transform: translateX(10px)
+  80%
+    transform: translateX(-5px)
+  100%
+    transform: translateX(0px)
+    border-color: #0277bd
+
+    
